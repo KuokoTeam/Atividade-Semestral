@@ -1,3 +1,3 @@
 # Atividade-Semestral
-Integrantes: Bernardo Kubo , Gabriel , Gustavo Hata , Luigi Oliveira , Matheus Rafaldini , Vinicius, Vinnicius Patera, Willian.
+Integrantes: Bernardo Kubo , Gabriel , Gustavo Hata , Luigi Oliveira , Matheus Rafaldini , Vinícius Geronimo da Costa, Vinnicius Patera, Willian Gabriel da Costa.
  
