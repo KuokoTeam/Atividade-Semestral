@@ -1,0 +1,55 @@
+Script do DB Kuoko
+
+//
+
+
+Create do DB e da TBL Usuários
+
+create database kuoko;
+use kuoko;
+create table usuarios
+(
+id_usuario int not null auto_increment primary key,
+nom_usuario varchar(50) not null,
+email varchar(50) not null,
+senha varchar(30) not null, 
+tel varchar(15)
+);
+
+//
+
+
+Criando a TBL Projetos
+
+use kuoko;
+create table projetos
+(
+id_projeto int not null auto_increment primary key,
+nom_projeto varchar(50) not null,
+data_criacao date not null
+);
+
+//
+
+
+Add o campo id_usuario a TBL projetos
+
+use kuoko;
+alter table projetos
+add id_usuario int;
+
+//
+
+
+Add a chave estrangeira na tabela 
+
+alter table projetos
+add foreign key (id_usuario)
+references usuarios (id_usuario);
+
+//
+
+
+
+
+
