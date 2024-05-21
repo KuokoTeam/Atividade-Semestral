@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TelaKanban</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style Kanban.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Projeto</h1>
+        <button id="openModalBtn">Nova Tarefa</button>
+    </div>
+
+    <div class="kanban">
+        <div class="column">
+            <h2>Backlog</h2>
+            
+        </div>
+        <div class="column">
+            <h2>Em Progresso</h2>
+            
+        </div>
+        <div class="column">
+            <h2>Completo</h2>
+            
+        </div>
+    </div>
+
+    
+    <div id="myModal" class="modal">
+        
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Adicionar Nova Tarefa</h2>
+            <input type="text" id="taskName" placeholder="Nome da Tarefa">
+            <select id="columnSelect">
+                <option value="0">Backlog</option>
+                <option value="1">Em Progresso</option>
+                <option value="2">Completo</option>
+            </select>
+            <button id="addTaskBtn" class="addTarefas">Adicionar Tarefa</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
